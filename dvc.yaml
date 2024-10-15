@@ -14,3 +14,10 @@ stages:
     outs:
     - data/processed
 
+  feature_engineering:
+    cmd: python src/feature_engineering.py
+    deps:
+    - data/processed
+    - src/feature_engineering.py
+    outs:
+    - data/features

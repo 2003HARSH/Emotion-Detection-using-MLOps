@@ -6,8 +6,11 @@ import os
 from sklearn.feature_extraction.text import CountVectorizer
 
 #fetch the data from raw/processed
-train_data=pd.read_csv('./data/processed/train.csv')
-test_data=pd.read_csv('./data/processed/test.csv')
+train_data=pd.read_csv('./data/processed/train_processed.csv')
+test_data=pd.read_csv('./data/processed/test_processed.csv')
+
+train_data.fillna('',inplace=True)
+test_data.fillna('',inplace=True)
 
 #Apply BOW
 X_train = train_data['content'].values
@@ -17,7 +20,7 @@ X_test = test_data['content'].values
 y_test = test_data['sentiment'].values
 
 # Apply Bag of Words (CountVectorizer)
-vectorizer = CountVectorizer()
+vectorizer = CountVectorizer(max_features=500)
 
 # Fit the vectorizer on the training data and transform it
 X_train_bow = vectorizer.fit_transform(X_train)
