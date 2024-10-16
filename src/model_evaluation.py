@@ -38,7 +38,9 @@ metrics_dict={
 }
 
 data_path=os.path.join("metrics")
-os.makedirs(data_path)
+if not os.path.exists(data_path):
+    os.makedirs(data_path)
+
 
 with open('./metrics/metrics.json','w') as file:
     json.dump(metrics_dict,file,indent=4)
