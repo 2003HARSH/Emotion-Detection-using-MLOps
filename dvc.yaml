@@ -21,3 +21,11 @@ stages:
     - src/feature_engineering.py
     outs:
     - data/features
+    
+  model_building:
+    cmd: python src/model_building.py
+    deps:
+    - data/features
+    - src/model_building.py
+    outs:
+    - models/model.pkl
