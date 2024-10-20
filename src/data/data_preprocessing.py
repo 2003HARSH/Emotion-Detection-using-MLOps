@@ -12,7 +12,7 @@ import logging
 logger = logging.getLogger('text_preprocessing')
 logger.setLevel('DEBUG')
 
-file_handler = logging.FileHandler('./logs/preprocessing.log')
+file_handler = logging.FileHandler('././logs/preprocessing.log')
 file_handler.setLevel('DEBUG')
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -139,10 +139,10 @@ def store_data(train_data: pd.DataFrame, test_data: pd.DataFrame, output_path: s
 # Main function to execute the workflow
 def main() -> None:
     try:
-        train_data, test_data = load_data('./data/raw/train.csv', './data/raw/test.csv')
+        train_data, test_data = load_data('././data/raw/train.csv', '././data/raw/test.csv')
         train_processed = normalize_text(train_data)
         test_processed = normalize_text(test_data)
-        store_data(train_processed, test_processed, './data/processed')
+        store_data(train_processed, test_processed, '././data/processed')
     except Exception as e:
         logger.error(f"An unexpected error occurred in main: {e}")
         raise

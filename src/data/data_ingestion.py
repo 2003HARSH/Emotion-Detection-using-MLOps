@@ -8,7 +8,7 @@ import logging
 logger = logging.getLogger('data_ingestion')
 logger.setLevel('DEBUG')
 
-file_handler = logging.FileHandler('./logs/ingestion.log')
+file_handler = logging.FileHandler('././logs/ingestion.log')
 file_handler.setLevel('DEBUG')
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -89,7 +89,7 @@ def store_data(train_data: pd.DataFrame, test_data: pd.DataFrame) -> None:
 
 def main() -> None:
     try:
-        test_size = load_params('./params.yaml')
+        test_size = load_params('././params.yaml')
         df = read_data('https://raw.githubusercontent.com/campusx-official/jupyter-masterclass/main/tweet_emotions.csv')
         final_df = process_data(df)
         train_data, test_data = train_test(final_df, test_size)

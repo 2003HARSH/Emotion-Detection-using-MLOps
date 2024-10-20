@@ -1,10 +1,10 @@
-2024-10-20 10:38:55,959 - text_preprocessing - INFO - Successfully downloaded required NLTK packages.
-2024-10-20 10:38:56,071 - text_preprocessing - INFO - Train and test data loaded successfully.
-2024-10-20 10:38:59,472 - text_preprocessing - INFO - Text normalization completed successfully.
-2024-10-20 10:39:00,051 - text_preprocessing - INFO - Text normalization completed successfully.
-2024-10-20 10:39:00,087 - text_preprocessing - INFO - Processed data stored successfully.
-2024-10-20 10:50:41,443 - text_preprocessing - INFO - Successfully downloaded required NLTK packages.
-2024-10-20 10:50:41,556 - text_preprocessing - INFO - Train and test data loaded successfully.
-2024-10-20 10:50:45,174 - text_preprocessing - INFO - Text normalization completed successfully.
-2024-10-20 10:50:45,441 - text_preprocessing - INFO - Text normalization completed successfully.
-2024-10-20 10:50:45,472 - text_preprocessing - INFO - Processed data stored successfully.
+2024-10-20 12:49:57,961 - text_preprocessing - INFO - Successfully downloaded required NLTK packages.
+2024-10-20 12:49:58,051 - text_preprocessing - INFO - Train and test data loaded successfully.
+2024-10-20 12:50:00,689 - text_preprocessing - INFO - Text normalization completed successfully.
+2024-10-20 12:50:00,861 - text_preprocessing - INFO - Text normalization completed successfully.
+2024-10-20 12:50:00,869 - text_preprocessing - INFO - Processed data stored successfully.
+2024-10-20 13:21:00,311 - text_preprocessing - INFO - Successfully downloaded required NLTK packages.
+2024-10-20 13:21:00,399 - text_preprocessing - INFO - Train and test data loaded successfully.
+2024-10-20 13:21:02,260 - text_preprocessing - INFO - Text normalization completed successfully.
+2024-10-20 13:21:02,555 - text_preprocessing - INFO - Text normalization completed successfully.
+2024-10-20 13:21:02,576 - text_preprocessing - INFO - Processed data stored successfully.

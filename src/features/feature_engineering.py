@@ -9,7 +9,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 logger = logging.getLogger('feature_engineering')
 logger.setLevel(logging.DEBUG)
 
-file_handler = logging.FileHandler('./logs/feature_engineering.log')
+file_handler = logging.FileHandler('././logs/feature_engineering.log')
 file_handler.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -111,16 +111,16 @@ def store_data(train_df: pd.DataFrame, test_df: pd.DataFrame, output_path: str) 
 def main() -> None:
     try:
         # Load data
-        train_data, test_data = load_data('./data/processed/train_processed.csv', './data/processed/test_processed.csv')
+        train_data, test_data = load_data('././data/processed/train_processed.csv', '././data/processed/test_processed.csv')
 
         # Load parameters
-        max_features = load_params('./params.yaml')
+        max_features = load_params('././params.yaml')
 
         # Apply Bag of Words
         train_df, test_df = apply_bow(train_data, test_data, max_features)
 
         # Store data
-        store_data(train_df, test_df, './data/features')
+        store_data(train_df, test_df, '././data/interim')
     except Exception as e:
         logger.error(f"An unexpected error occurred in the main function: {e}")
         raise

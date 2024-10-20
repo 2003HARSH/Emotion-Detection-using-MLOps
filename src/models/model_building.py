@@ -10,7 +10,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 logger = logging.getLogger('model_building')
 logger.setLevel(logging.DEBUG)
 
-file_handler = logging.FileHandler('./logs/model_building.log')
+file_handler = logging.FileHandler('././logs/model_building.log')
 file_handler.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -74,7 +74,7 @@ def save_model(model, output_path: str) -> None:
         os.makedirs(output_path, exist_ok=True)
         with open(os.path.join(output_path, 'model.pkl'), 'wb') as f:
             pickle.dump(model, f)
-        logger.info("Model successfully saved to './models/model.pkl'.")
+        logger.info("Model successfully saved to {output_path}")
     except OSError as e:
         logger.error(f"Error creating directory or writing file: {e}")
         raise
@@ -85,10 +85,10 @@ def save_model(model, output_path: str) -> None:
 def main():
     try:
         # Load training data
-        train_data = load_data('./data/features/train_bow.csv')
+        train_data = load_data('././data/interim/train_bow.csv')
 
         # Load parameters from params.yaml
-        n_estimators, learning_rate = load_params('./params.yaml')
+        n_estimators, learning_rate = load_params('././params.yaml')
 
         # Prepare training data
         X_train = train_data.iloc[:, :-1].values
@@ -98,7 +98,7 @@ def main():
         clf = train_model(X_train, y_train, n_estimators, learning_rate)
 
         # Save the trained model
-        save_model(clf, './models')
+        save_model(clf, '././models')
 
     except Exception as e:
         logger.error(f"An unexpected error occurred in the main function: {e}")

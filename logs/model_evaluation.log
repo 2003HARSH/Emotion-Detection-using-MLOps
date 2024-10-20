@@ -1,8 +1,8 @@
-2024-10-20 10:49:30,047 - model_evaluation - INFO - Model loaded successfully.
-2024-10-20 10:49:30,136 - model_evaluation - INFO - Test data loaded successfully.
-2024-10-20 10:49:30,142 - model_evaluation - INFO - Model evaluation completed successfully.
-2024-10-20 10:49:30,158 - model_evaluation - INFO - Metrics saved successfully to './metrics/metrics.json'.
-2024-10-20 10:51:08,758 - model_evaluation - INFO - Model loaded successfully.
-2024-10-20 10:51:08,868 - model_evaluation - INFO - Test data loaded successfully.
-2024-10-20 10:51:08,883 - model_evaluation - INFO - Model evaluation completed successfully.
-2024-10-20 10:51:08,883 - model_evaluation - INFO - Metrics saved successfully to './metrics/metrics.json'.
+2024-10-20 13:18:59,865 - model_evaluation - INFO - Model loaded successfully.
+2024-10-20 13:18:59,930 - model_evaluation - INFO - Test data loaded successfully.
+2024-10-20 13:18:59,968 - model_evaluation - INFO - Model evaluation completed successfully.
+2024-10-20 13:18:59,968 - model_evaluation - INFO - Metrics saved successfully to {output_path}
+2024-10-20 13:21:10,139 - model_evaluation - INFO - Model loaded successfully.
+2024-10-20 13:21:10,202 - model_evaluation - INFO - Test data loaded successfully.
+2024-10-20 13:21:10,202 - model_evaluation - INFO - Model evaluation completed successfully.
+2024-10-20 13:21:10,246 - model_evaluation - INFO - Metrics saved successfully to {output_path}

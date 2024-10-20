@@ -10,7 +10,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_a
 logger = logging.getLogger('model_evaluation')
 logger.setLevel(logging.DEBUG)
 
-file_handler = logging.FileHandler('./logs/model_evaluation.log')
+file_handler = logging.FileHandler('././logs/model_evaluation.log')
 file_handler.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -77,7 +77,7 @@ def save_metrics(metrics: dict, output_path: str) -> None:
         os.makedirs(output_path, exist_ok=True)
         with open(os.path.join(output_path, 'metrics.json'), 'w') as file:
             json.dump(metrics, file, indent=4)
-        logger.info("Metrics saved successfully to './metrics/metrics.json'.")
+        logger.info("Metrics saved successfully to {output_path}")
     except OSError as e:
         logger.error(f"Error creating directory or writing file: {e}")
         raise
@@ -89,7 +89,7 @@ def main():
     try:
         # Load the model and test data
         clf = load_model('models/model.pkl')
-        test_data = load_test_data('./data/features/test_bow.csv')
+        test_data = load_test_data('./data/interim/test_bow.csv')
 
         # Prepare test data
         X_test = test_data.iloc[:, :-1].values
@@ -99,7 +99,7 @@ def main():
         metrics = evaluate_model(clf, X_test, y_test)
 
         # Save the metrics
-        save_metrics(metrics, './metrics')
+        save_metrics(metrics, '././reports')
 
     except Exception as e:
         logger.error(f"An unexpected error occurred in the main function: {e}")

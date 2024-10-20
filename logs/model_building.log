@@ -1,8 +1,8 @@
-2024-10-20 10:45:25,942 - model_building - INFO - Successfully loaded training data.
-2024-10-20 10:45:25,944 - model_building - INFO - Loaded parameters: n_estimators=50, learning_rate=0.2
-2024-10-20 10:45:28,826 - model_building - INFO - Successfully trained the GradientBoostingClassifier model.
-2024-10-20 10:45:28,829 - model_building - INFO - Model successfully saved to './models/model.pkl'.
-2024-10-20 10:50:53,838 - model_building - INFO - Successfully loaded training data.
-2024-10-20 10:50:53,839 - model_building - INFO - Loaded parameters: n_estimators=100, learning_rate=0.1
-2024-10-20 10:51:05,888 - model_building - INFO - Successfully trained the GradientBoostingClassifier model.
-2024-10-20 10:51:05,891 - model_building - INFO - Model successfully saved to './models/model.pkl'.
+2024-10-20 13:12:57,781 - model_building - INFO - Successfully loaded training data.
+2024-10-20 13:12:57,781 - model_building - INFO - Loaded parameters: n_estimators=100, learning_rate=0.1
+2024-10-20 13:13:05,136 - model_building - INFO - Successfully trained the GradientBoostingClassifier model.
+2024-10-20 13:13:05,168 - model_building - INFO - Model successfully saved to {output_path}
+2024-10-20 13:21:06,767 - model_building - INFO - Successfully loaded training data.
+2024-10-20 13:21:06,767 - model_building - INFO - Loaded parameters: n_estimators=50, learning_rate=0.1
+2024-10-20 13:21:08,445 - model_building - INFO - Successfully trained the GradientBoostingClassifier model.
+2024-10-20 13:21:08,452 - model_building - INFO - Model successfully saved to {output_path}
