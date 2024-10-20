@@ -6,3 +6,7 @@
 2024-10-20 13:21:10,202 - model_evaluation - INFO - Test data loaded successfully.
 2024-10-20 13:21:10,202 - model_evaluation - INFO - Model evaluation completed successfully.
 2024-10-20 13:21:10,246 - model_evaluation - INFO - Metrics saved successfully to {output_path}
+2024-10-20 14:15:16,640 - model_evaluation - INFO - Model loaded successfully.
+2024-10-20 14:15:16,677 - model_evaluation - INFO - Test data loaded successfully.
+2024-10-20 14:15:16,694 - model_evaluation - INFO - Model evaluation completed successfully.
+2024-10-20 14:15:16,695 - model_evaluation - INFO - Metrics saved successfully to {output_path}

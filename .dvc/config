@@ -1,0 +1,4 @@
+[core]
+    remote = emotion-detection
+['remote "emotion-detection"']
+    url = C:\Users\harsh\AppData\Local\Temp
