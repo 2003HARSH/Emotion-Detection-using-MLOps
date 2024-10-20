@@ -1,8 +1,5 @@
 Emotion Detection using MLOps
 ==============================
-
-### A short description of the project.
-
 Project Organization
 ------------
 
@@ -51,4 +48,52 @@ Project Organization
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
+## Features
 
+- **Data Ingestion**: Loads tweet data with sentiment labels.
+- **Preprocessing**: Includes lemmatization, stop word removal, and handling of punctuation and numbers.
+- **Feature Engineering**: Utilizes the Bag of Words (BOW) model to convert text into numerical features.
+- **Model Building**: Implements a Gradient Boosting Classifier for sentiment classification.
+- **MLOps Integration**: 
+  - **DVC**: Data Version Control for managing datasets and model versions.
+  - **ML Pipeline**: Streamlined workflow from data preparation to model training and evaluation.
+
+## Evaluation Metrics
+
+The model's performance is assessed using:
+- Accuracy
+- Precision
+- Recall
+- ROC AUC
+
+## Installation
+
+To get started, clone the repository and install the required packages:
+
+```bash
+git clone https://github.com/2003HARSH/Emotion-Detection-using-MLOps
+cd Emotion-Detection-using-MLOps
+pip install -r requirements.txt
+```
+
+## Usage
+
+1. **Data Preparation**: Update the `params.yaml` file with relevant parameters.
+2. **Run the Pipeline**: Execute the following command to run the complete workflow:
+
+```bash
+dvc repro
+```
+
+## Contributing
+
+Contributions are welcome! Please create a new issue or submit a pull request for any enhancements or fixes.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- [DVC](https://dvc.org/) for data version control.
+- [scikit-learn](https://scikit-learn.org/stable/) for machine learning algorithms.
