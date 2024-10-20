@@ -1,0 +1,16 @@
+2024-10-20 10:42:09,541 - feature_engineering - INFO - Successfully loaded processed train and test data.
+2024-10-20 10:42:09,541 - feature_engineering - INFO - Loaded max_features: 500
+2024-10-20 10:42:09,604 - feature_engineering - ERROR - An error occurred while applying BOW: np.nan is an invalid document, expected byte or unicode string.
+2024-10-20 10:42:09,604 - feature_engineering - ERROR - An unexpected error occurred in the main function: np.nan is an invalid document, expected byte or unicode string.
+2024-10-20 10:43:50,142 - feature_engineering - INFO - Successfully loaded processed train and test data.
+2024-10-20 10:43:50,142 - feature_engineering - INFO - Loaded max_features: 500
+2024-10-20 10:43:50,142 - feature_engineering - INFO - Successfully cleaned the data.
+2024-10-20 10:43:50,158 - feature_engineering - INFO - Successfully cleaned the data.
+2024-10-20 10:43:50,277 - feature_engineering - INFO - Successfully applied Bag of Words.
+2024-10-20 10:43:51,096 - feature_engineering - INFO - Successfully stored BOW features.
+2024-10-20 10:50:48,532 - feature_engineering - INFO - Successfully loaded processed train and test data.
+2024-10-20 10:50:48,532 - feature_engineering - INFO - Loaded max_features: 1000
+2024-10-20 10:50:48,532 - feature_engineering - INFO - Successfully cleaned the data.
+2024-10-20 10:50:48,532 - feature_engineering - INFO - Successfully cleaned the data.
+2024-10-20 10:50:48,671 - feature_engineering - INFO - Successfully applied Bag of Words.
+2024-10-20 10:50:50,286 - feature_engineering - INFO - Successfully stored BOW features.
