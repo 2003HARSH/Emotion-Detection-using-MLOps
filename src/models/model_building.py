@@ -74,7 +74,7 @@ def save_model(model, output_path: str) -> None:
         os.makedirs(output_path, exist_ok=True)
         with open(os.path.join(output_path, 'model.pkl'), 'wb') as f:
             pickle.dump(model, f)
-        logger.info("Model successfully saved to {output_path}")
+        logger.info(f"Model successfully saved to {output_path}")
     except OSError as e:
         logger.error(f"Error creating directory or writing file: {e}")
         raise

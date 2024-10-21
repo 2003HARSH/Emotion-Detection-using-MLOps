@@ -39,4 +39,4 @@ stages:
     - models/model.pkl
     - src/models/model_evaluation.py
     outs:
-    - reports
+    - reports/metrics.json

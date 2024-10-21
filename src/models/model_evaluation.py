@@ -77,7 +77,7 @@ def save_metrics(metrics: dict, output_path: str) -> None:
         os.makedirs(output_path, exist_ok=True)
         with open(os.path.join(output_path, 'metrics.json'), 'w') as file:
             json.dump(metrics, file, indent=4)
-        logger.info("Metrics saved successfully to {output_path}")
+        logger.info(f"Metrics saved successfully to {output_path}")
     except OSError as e:
         logger.error(f"Error creating directory or writing file: {e}")
         raise
