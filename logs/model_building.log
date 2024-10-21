@@ -22,3 +22,7 @@
 2024-10-21 17:51:20,201 - model_building - INFO - Loaded parameters: n_estimators=500, learning_rate=0.2
 2024-10-21 17:51:24,014 - model_building - INFO - Successfully trained the GradientBoostingClassifier model.
 2024-10-21 17:51:24,014 - model_building - INFO - Model successfully saved to ././models
+2024-10-21 17:59:21,913 - model_building - INFO - Successfully loaded training data.
+2024-10-21 17:59:21,915 - model_building - INFO - Loaded parameters: n_estimators=500, learning_rate=0.2
+2024-10-21 17:59:28,796 - model_building - INFO - Successfully trained the GradientBoostingClassifier model.
+2024-10-21 17:59:28,803 - model_building - INFO - Model successfully saved to ././models

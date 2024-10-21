@@ -85,7 +85,7 @@ def save_model(model, output_path: str) -> None:
 def main():
     try:
         # Load training data
-        train_data = load_data('././data/interim/train_bow.csv')
+        train_data = load_data('././data/interim/train_tfidf.csv')
 
         # Load parameters from params.yaml
         n_estimators, learning_rate = load_params('././params.yaml')

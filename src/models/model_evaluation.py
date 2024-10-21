@@ -89,7 +89,7 @@ def main():
     try:
         # Load the model and test data
         clf = load_model('models/model.pkl')
-        test_data = load_test_data('./data/interim/test_bow.csv')
+        test_data = load_test_data('./data/interim/test_tfidf.csv')
 
         # Prepare test data
         X_test = test_data.iloc[:, :-1].values

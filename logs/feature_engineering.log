@@ -28,3 +28,15 @@
 2024-10-21 17:51:18,046 - feature_engineering - INFO - Successfully cleaned the data.
 2024-10-21 17:51:18,102 - feature_engineering - INFO - Successfully applied Bag of Words.
 2024-10-21 17:51:18,204 - feature_engineering - INFO - Successfully stored BOW features.
+2024-10-21 17:58:16,568 - feature_engineering - INFO - Successfully loaded processed train and test data.
+2024-10-21 17:58:16,568 - feature_engineering - INFO - Loaded max_features: 100
+2024-10-21 17:58:16,568 - feature_engineering - INFO - Successfully cleaned the data.
+2024-10-21 17:58:16,568 - feature_engineering - INFO - Successfully cleaned the data.
+2024-10-21 17:58:16,568 - feature_engineering - ERROR - An error occurred while applying BOW: TfidfTransformer.__init__() got an unexpected keyword argument 'max_features'
+2024-10-21 17:58:16,568 - feature_engineering - ERROR - An unexpected error occurred in the main function: TfidfTransformer.__init__() got an unexpected keyword argument 'max_features'
+2024-10-21 17:59:19,504 - feature_engineering - INFO - Successfully loaded processed train and test data.
+2024-10-21 17:59:19,504 - feature_engineering - INFO - Loaded max_features: 100
+2024-10-21 17:59:19,504 - feature_engineering - INFO - Successfully cleaned the data.
+2024-10-21 17:59:19,504 - feature_engineering - INFO - Successfully cleaned the data.
+2024-10-21 17:59:19,583 - feature_engineering - INFO - Successfully applied Bag of Words.
+2024-10-21 17:59:19,887 - feature_engineering - INFO - Successfully stored BOW features.
