@@ -20,3 +20,8 @@
 2024-10-20 14:14:46,265 - data_ingestion - INFO - Data processed successfully.
 2024-10-20 14:14:46,266 - data_ingestion - INFO - Data split into train and test sets successfully.
 2024-10-20 14:14:46,296 - data_ingestion - INFO - Data stored successfully.
+2024-10-23 15:55:25,254 - data_ingestion - INFO - Test size retrieved successfully.
+2024-10-23 15:55:26,223 - data_ingestion - INFO - Data read successfully from the provided URL.
+2024-10-23 15:55:26,253 - data_ingestion - INFO - Data processed successfully.
+2024-10-23 15:55:26,268 - data_ingestion - INFO - Data split into train and test sets successfully.
+2024-10-23 15:55:26,330 - data_ingestion - INFO - Data stored successfully.

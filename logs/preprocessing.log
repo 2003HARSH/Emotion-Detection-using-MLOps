@@ -8,3 +8,8 @@
 2024-10-20 13:21:02,260 - text_preprocessing - INFO - Text normalization completed successfully.
 2024-10-20 13:21:02,555 - text_preprocessing - INFO - Text normalization completed successfully.
 2024-10-20 13:21:02,576 - text_preprocessing - INFO - Processed data stored successfully.
+2024-10-23 15:55:32,065 - text_preprocessing - INFO - Successfully downloaded required NLTK packages.
+2024-10-23 15:55:32,286 - text_preprocessing - INFO - Train and test data loaded successfully.
+2024-10-23 15:55:35,439 - text_preprocessing - INFO - Text normalization completed successfully.
+2024-10-23 15:55:35,677 - text_preprocessing - INFO - Text normalization completed successfully.
+2024-10-23 15:55:35,723 - text_preprocessing - INFO - Processed data stored successfully.

@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import yaml
 import logging
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 
 # Configure logging
 logger = logging.getLogger('feature_engineering')
@@ -70,11 +70,11 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
 def apply_bow(train_data: pd.DataFrame, test_data: pd.DataFrame, max_features: int) -> tuple:
     """Applies Bag of Words (CountVectorizer) to the data."""
     try:
-        # Clean the data to ensure no NaN values are passed to TfidfVectorizer
+        # Clean the data to ensure no NaN values are passed to CountVectorizer
         train_data = clean_data(train_data)
         test_data = clean_data(test_data)
 
-        vectorizer = TfidfVectorizer(max_features=max_features)
+        vectorizer = CountVectorizer(max_features=max_features)
 
         X_train_bow = vectorizer.fit_transform(train_data['content'].values)
         X_test_bow = vectorizer.transform(test_data['content'].values)
@@ -98,8 +98,8 @@ def store_data(train_df: pd.DataFrame, test_df: pd.DataFrame, output_path: str) 
     """Stores the transformed data in the specified path."""
     try:
         os.makedirs(output_path, exist_ok=True)
-        train_df.to_csv(os.path.join(output_path, "train_tfidf.csv"), index=False)
-        test_df.to_csv(os.path.join(output_path, "test_tfidf.csv"), index=False)
+        train_df.to_csv(os.path.join(output_path, "train_bow.csv"), index=False)
+        test_df.to_csv(os.path.join(output_path, "test_bow.csv"), index=False)
         logger.info("Successfully stored BOW features.")
     except OSError as e:
         logger.error(f"Error creating directory or writing files: {e}")
