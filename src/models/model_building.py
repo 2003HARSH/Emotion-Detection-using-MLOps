@@ -6,6 +6,8 @@ import yaml
 import logging
 from sklearn.ensemble import GradientBoostingClassifier
 
+from dvclive import Live
+
 # Configure logging
 logger = logging.getLogger('model_building')
 logger.setLevel(logging.DEBUG)

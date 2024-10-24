@@ -6,6 +6,8 @@ import os
 import logging
 from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_auc_score
 
+from dvclive import Live
+
 # Configure logging
 logger = logging.getLogger('model_evaluation')
 logger.setLevel(logging.DEBUG)
@@ -54,6 +56,13 @@ def evaluate_model(clf, X_test: pd.DataFrame, y_test: pd.Series) -> dict:
     try:
         y_pred = clf.predict(X_test)
         y_pred_proba = clf.predict_proba(X_test)[:, 1]
+
+#Experiment tracking using DVC
+        with Live(save_dvc_exp=True) as live:
+            live.log_metric('accuracy', accuracy_score(y_test, y_pred))
+            live.log_metric('precision', precision_score(y_test, y_pred))
+            live.log_metric('recall', recall_score(y_test, y_pred))
+            live.log_metric('auc', roc_auc_score(y_test, y_pred_proba))
 
         # Calculate evaluation metrics
         metrics = {

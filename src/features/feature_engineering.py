@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import yaml
 import logging
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Configure logging
 logger = logging.getLogger('feature_engineering')
@@ -70,11 +70,11 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
 def apply_bow(train_data: pd.DataFrame, test_data: pd.DataFrame, max_features: int) -> tuple:
     """Applies Bag of Words (CountVectorizer) to the data."""
     try:
-        # Clean the data to ensure no NaN values are passed to CountVectorizer
+        # Clean the data to ensure no NaN values are passed to TfidfVectorizer
         train_data = clean_data(train_data)
         test_data = clean_data(test_data)
 
-        vectorizer = CountVectorizer(max_features=max_features)
+        vectorizer = TfidfVectorizer(max_features=max_features)
 
         X_train_bow = vectorizer.fit_transform(train_data['content'].values)
         X_test_bow = vectorizer.transform(test_data['content'].values)
