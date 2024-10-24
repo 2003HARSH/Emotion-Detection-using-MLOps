@@ -40,3 +40,9 @@
 2024-10-24 19:33:58,999 - feature_engineering - INFO - Successfully cleaned the data.
 2024-10-24 19:33:59,092 - feature_engineering - INFO - Successfully applied Bag of Words.
 2024-10-24 19:34:01,327 - feature_engineering - INFO - Successfully stored BOW features.
+2024-10-24 19:58:17,934 - feature_engineering - INFO - Successfully loaded processed train and test data.
+2024-10-24 19:58:17,934 - feature_engineering - INFO - Loaded max_features: 500
+2024-10-24 19:58:17,950 - feature_engineering - INFO - Successfully cleaned the data.
+2024-10-24 19:58:17,950 - feature_engineering - INFO - Successfully cleaned the data.
+2024-10-24 19:58:18,138 - feature_engineering - INFO - Successfully applied Bag of Words.
+2024-10-24 19:58:21,343 - feature_engineering - INFO - Successfully stored BOW features.

@@ -34,3 +34,7 @@
 2024-10-24 19:34:17,840 - model_evaluation - INFO - Test data loaded successfully.
 2024-10-24 19:34:18,712 - model_evaluation - INFO - Model evaluation completed successfully.
 2024-10-24 19:34:18,713 - model_evaluation - INFO - Metrics saved successfully to ././reports
+2024-10-24 19:58:38,821 - model_evaluation - INFO - Model loaded successfully.
+2024-10-24 19:58:38,948 - model_evaluation - INFO - Test data loaded successfully.
+2024-10-24 19:58:39,766 - model_evaluation - INFO - Model evaluation completed successfully.
+2024-10-24 19:58:39,768 - model_evaluation - INFO - Metrics saved successfully to ././reports
